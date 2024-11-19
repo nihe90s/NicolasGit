@@ -1,0 +1,243 @@
+/* Resetando margens e padding de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding e bordas sejam incluídos nas dimensões do elemento */
+}
+
+/* Estilos gerais para o body */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte usada no corpo da página */
+    display: flex; /* Usando Flexbox para organizar o layout */
+    flex-direction: column; /* Organiza os elementos do body em uma coluna */
+    min-height: 100px; /* Altura mínima do body */
+    background-image: url(imagens/products-min.png); /* Imagem de fundo para o body */
+    width: auto;
+    height: auto;
+}
+
+/* Estilos para o cabeçalho fixo */
+header {
+    position: fixed; /* Fixa o cabeçalho no topo da tela */
+    top: 0;
+    left: 0;
+    width: 100%; /* Cabeçalho ocupa toda a largura da tela */
+    height: 60px; /* Altura fixa para o cabeçalho */
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+    color: white; /* Cor do texto no cabeçalho */
+    display: flex; /* Usando Flexbox para alinhamento dos itens */
+    align-items: left; /* Alinha os itens verticalmente à esquerda */
+    justify-content: left; /* Alinha os itens horizontalmente à esquerda */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+/* Estilos para os botões no cabeçalho */
+.buttonmusica, .buttonvideo {
+    position: relative;
+    top: 5px; /* Distância do topo */
+}
+
+.buttonmusica {
+    left: 50px; /* Distância da esquerda para o botão de música */
+}
+
+.buttonvideo {
+    left: 80px; /* Distância da esquerda para o botão de vídeo */
+}
+
+/* Estilo dos botões dentro do cabeçalho */
+#buttonmusicastyle, #buttonvideostyle {
+    font-size: larger; /* Aumenta o tamanho da fonte */
+    background-color: transparent; /* Cor de fundo transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    width: 140px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+}
+
+/* Efeito de hover (passar o mouse) para os botões */
+#buttonmusicastyle:hover, #buttonvideostyle:hover {
+    background-color: #2f2f2f; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o conteúdo principal */
+main {
+    color: white; /* Cor do texto */
+    flex: 1; /* Faz o conteúdo ocupar o espaço disponível */
+    padding: 20px; /* Preenchimento interno */
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Preenchimento interno */
+    width: 100%; /* Ocupa toda a largura da tela */
+}
+
+/* Estilo para a barra de navegação */
+nav {
+    margin-top: 10px; /* Espaço acima da barra de navegação */
+}
+
+/* Estilo para os links de navegação */
+nav a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado dos links */
+    margin: 0 15px; /* Espaço entre os links */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Efeito de hover para os links de navegação */
+nav a:hover {
+    text-decoration: underline; /* Sublinha o texto quando o mouse passa sobre o link */
+}
+
+/* Estilos para os containers */
+
+/*------------------------------------------------------------------------------------------------------*/
+/* Estilo para o container do vídeo */
+.div-video {
+    width: 100%; /* Largura 100% */
+    padding-top: 56.25%; /* Proporção de 16:9 */
+    position: relative; /* Permite o controle de sobreposição */
+}
+
+/* Estilo para o vídeo dentro do container */
+.div-video video {
+    width: 100%; /* Largura 100% */
+    height: 100%; /* Altura 100% */
+    position: absolute; /* Posicionamento absoluto para cobrir o container */
+    top: 0;
+}
+
+/* Estilo para a imagem do Arcane */
+#div-arcane {
+    background-color: rgba(0, 0, 0, 0); /* Fundo transparente */
+    background-image: url('imagens/sm-sugar-logo-600px.png'); /* Imagem de fundo */
+    position: absolute;
+    top: 300px; /* Distância do topo */
+    left: 100px; /* Distância da esquerda */
+}
+
+/* Estilos para o container do Arcane */
+.arcane-container {
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Preenchimento interno */
+    width: 500px; /* Largura do container */
+    height: 203px; /* Altura do container */
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para os botões dentro do container do Arcane */
+#buttonarcane {
+    font-size: larger; /* Aumenta o tamanho da fonte */
+    opacity: 70%;
+    background-color: #4E6BA6; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda padrão */
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de clique */
+    width: 250px; /* Largura do botão */
+    height: 70px; /* Altura do botão */
+    background-image: url(imagens/netflix.png); /* Define a imagem de fundo estática */
+    background-size: cover; /* Faz com que a imagem cubra todo o botão */
+    background-position: center; /* Centraliza a imagem dentro do botão */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de animação */
+}
+
+/* Estilo para o grupo de botões do Arcane */
+.buttonarcane-group {
+    position: absolute;
+    top: 500px; /* Distância do topo */
+    left: 230px; /* Distância da esquerda */
+}
+
+/* Efeito de hover para o botão do Arcane */
+#buttonarcane:hover {
+    background-color: #3b517d; /* Muda a cor de fundo ao passar o mouse */
+    background-image: url(imagens/Significados-da-Marca-Netflix-1.gif); /* Substitui a imagem estática pelo GIF ao passar o mouse */
+    transform: translateY(-3px); /* Move o botão 10px para cima */
+}
+
+/* Estilo de hover para o botão - com subida */
+#buttonarcane:active {
+    transform: translateY(0); /* Define o botão de volta ao seu lugar quando pressionado */
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+/* Estilos para o container de imagens do Valorant */
+#div-valorantImagem {
+    background-image: url(imagens/valorant9.jpg); /* Imagem de fundo */
+}
+
+/* Estilos para o container do Valorant */
+.valorant-container {
+    background-color: white; /* Cor de fundo branca */
+    padding: 20px; /* Preenchimento interno */
+    width: 6000px; /* Largura muito grande (verificar necessidade de ajustar) */
+    height: 304px; /* Altura do container */
+    text-align: center; /* Alinha o conteúdo ao centro */
+}
+/*------------------------------------------------------------------------------------------------------*/
+/* Estilos para o grid de imagens */
+.grid-container {
+    display: grid; /* Usando grid layout para as imagens */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Colunas automáticas com tamanho mínimo de 300px */
+    gap: 10px; /* Espaço entre os itens */
+}
+
+/* Estilos para os links dentro do grid */
+.grid-item a {
+    display: block; /* Faz o link envolver toda a imagem */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+/* Estilos para as imagens dentro do grid */
+.grid-item img {
+    width: 100%; /* A imagem ocupa toda a largura da célula */
+    height: 100%; /* A altura é ajustada automaticamente */
+    object-fit: cover; /* A imagem cobre a área sem distorcer */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de animação */
+}
+
+/* Efeito de hover na imagem do grid */
+.grid-item a:hover img {
+    outline: 3px solid white; /* Aplica uma borda branca */
+    outline-offset: -3px; /* Faz a borda ficar colada à imagem */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Intensifica a sombra */
+    transform: translateY(-3px); /* Move o botão 10px para cima */
+}
+/*----------------------------------------------------------------------------*/
+.logo-container {
+    width: 100%;            /* Define a largura da div */
+    height: auto;           /* Define a altura da div */
+/*  border: 2px solid #000;  Borda para visualização */
+    overflow: hidden;        /* Garante que a imagem não ultrapasse os limites da div */
+    display: relative;
+    align-items: center;
+    justify-content: center; /* Centraliza a imagem dentro da div */
+    padding-left: 30px
+}
+
+
+.logo-container img {
+    width: 100%;             /* Ocupa 100% da largura da div */
+    height: 100%;            /* Ocupa 100% da altura da div */
+}
+
+#div-logo{
+    height: 60px;
+    width: auto;
+    object-fit: contain;  /* A imagem será redimensionada sem cortar as bordas e mantendo a proporção */
+    object-position: center; /* Garante que a imagem seja centralizada dentro da div */
+}
+/*------------------------------------------------------------------------------------------------------*/
