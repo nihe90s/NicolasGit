@@ -1,0 +1,90 @@
+/* Resetando margens e padding para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Define que o padding e bordas serão incluídos no cálculo da largura/altura dos elementos */
+}
+
+/* Estilizando o body da página */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo da página */
+    display: flex; /* Usando o Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    height: 100vh; /* Define a altura do body como 100% da altura da tela */
+    background-image: url('imagens/arcane2_desktop_default_1x.jpg'); /* Definindo uma imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+}
+
+/* Estilos para o container de login */
+.login-container {
+    background-color: white; /* Define a cor de fundo do container */
+    padding: 20px; /* Adiciona preenchimento interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do container */
+    width: 300px; /* Define uma largura fixa para o container */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Estilos para os grupos de input */
+.input-group {
+    margin-bottom: 10px; /* Espaço entre os grupos de input */
+    text-align: left; /* Alinha o texto dos labels à esquerda */
+    padding-top: 50px; /* Espaço superior para o grupo de input */
+}
+
+/* Estilos para os campos de input */
+input {
+    width: 100%; /* O input ocupará toda a largura disponível */
+    padding: 10px; /* Adiciona preenchimento interno ao campo de input */
+    margin-top: 5px; /* Espaço acima do campo de input */
+    border: 1px solid #ccc; /* Borda fina e clara */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #c3c3c3; /* Cor de fundo do campo de input */
+    outline: none; /* Remove o contorno padrão do navegador ao focar no input */
+}
+
+/* Estilos para os botões */
+button {
+    font-size: larger; /* Aumenta o tamanho da fonte do botão */
+    width: 100%; /* O botão ocupará toda a largura disponível */
+    padding: 10px; /* Adiciona preenchimento interno ao botão */
+    background-color: #233454; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Aponta o cursor para indicar que é clicável */
+}
+
+/* Estilo de hover para o botão */
+button:hover {
+    background-color: #1c2a47; /* Muda a cor de fundo quando o mouse passa sobre o botão */
+}
+
+/* Estilos para o título (h2) */
+h2 {
+    padding-top: 50px; /* Espaço superior para o título */
+}
+
+/* Estilos para o grupo de botões */
+.button-group {
+    padding-top: 80px; /* Espaço superior para o grupo de botões */
+}
+
+/* Estilos para o campo de input e password */
+#password, #username {
+    font-size: larger; /* Aumenta o tamanho da fonte para os campos de username e password */
+}
+
+/* Estilos para a div que envolve o login */
+#divLogin {
+    color: white; /* Cor do texto dentro do div */
+    opacity: 90%; /* Define a opacidade do fundo para que a imagem de fundo seja visível */
+    background-color: #69bad3; /* Cor de fundo do container */
+    background-image: url('imagens/arcane2_desktop_container_2x.jpg'); /* Imagem de fundo do container */
+    background-size: cover; /* Faz com que a imagem cubra todo o container */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    width: 500px; /* Largura fixa do container */
+    height: 500px; /* Altura fixa do container */
+}
